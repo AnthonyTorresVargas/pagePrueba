@@ -1,0 +1,504 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    color: white;
+    background-color: #3a3a3a;
+    background-color: #000000;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23a6ac92' fill-opacity='0.1'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+    font-size: 16px;
+    font-family: 'Lobster', cursive;
+    min-width: 390px;
+}
+
+.nuestraAgrupacion{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+
+}
+
+/* navigation */
+
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-brand {
+    width: 120px;
+    height: 40px;
+}
+
+/* nav ri */
+.nav-main-left {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-between;
+}
+
+/* nav left */
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 10px;
+}
+
+.nav-main ul li a {
+    padding: 6px;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+/* .nav-main ul.nav-menu {
+    flex: 1; 
+    margin-left: 20px; 
+} */
+
+/* showcase */
+/* hr {
+    margin: 10px 0px;
+} */
+
+.showcase {
+    width: 100%;
+    height: 90vh;
+    background: url(/img/PortadaPrincipal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
+    padding: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+
+}
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border:0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 10px 0px;
+    opacity: .7
+}
+
+.btn:hover{
+    opacity: initial;
+}
+
+.showcase h1{
+    /* font-family: 'Oleo Script', cursive; */
+    font-size: 70px;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.showcase h2{
+    font-size: 30px;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.showcase p {
+    margin-bottom: 10px;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+/* integrantes */
+
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*jssor slider arrow skin 093 css*/
+.jssora093 {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.jssora093 .c {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 400;
+    stroke-miterlimit: 10;
+}
+
+.jssora093 .a {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 400;
+    stroke-miterlimit: 10;
+}
+
+.jssora093:hover {
+    opacity: .8;
+}
+
+.jssora093.jssora093dn {
+    opacity: .6;
+}
+
+.jssora093.jssora093ds {
+    opacity: .3;
+    pointer-events: none;
+}
+
+/*jssor slider thumbnail skin 101 css*/
+.jssort101 .p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background: #000;
+}
+
+.jssort101 .p .cv {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.jssort101 .a {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 400;
+    stroke-miterlimit: 10;
+    visibility: hidden;
+}
+
+.jssort101 .p:hover .cv,
+.jssort101 .p.pdn .cv {
+    border: none;
+    border-color: transparent;
+}
+
+.jssort101 .p:hover {
+    padding: 2px;
+}
+
+.jssort101 .p:hover .cv {
+    background-color: rgba(0, 0, 0, 6);
+    opacity: .35;
+}
+
+.jssort101 .p:hover.pdn {
+    padding: 0;
+}
+
+.jssort101 .p:hover.pdn .cv {
+    border: 2px solid #fff;
+    background: none;
+    opacity: .35;
+}
+
+.jssort101 .pav .cv {
+    border-color: #fff;
+    opacity: .35;
+}
+
+.jssort101 .pav .a,
+.jssort101 .p:hover .a {
+    visibility: visible;
+}
+
+.jssort101 .t {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    opacity: .6;
+}
+
+.jssort101 .pav .t,
+.jssort101 .p:hover .t {
+    opacity: 1;
+}
+/* news car (agrupacion) */
+
+.news-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 20px 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.news-card p{
+    overflow-y: scroll;
+    height: 190px;
+}
+
+.news-card h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.news-card p::-webkit-scrollbar-track {
+    border: 1px solid #000;
+    padding: 2px 0;
+    background-color: #494a1d;
+  }
+  
+  .news-card p::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .news-card p::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #afa405;
+    border: 1px solid #000;
+  }
+.infoAgrupacion{
+    display: flex;
+    flex-direction: column;
+}
+.news-card .infoAgrupacion img{
+    width: 300px;
+    height: 210px;
+
+}
+.infoEscudo{
+    /* position: absolute;
+    z-index: 1; */
+    width: 50%;
+	top: 10%;
+	left: 40%;
+	margin: auto; 
+	/*margin-left: -350px; */
+	text-align: center;
+}
+
+.infoEscudo p{
+    /* overflow-y: scroll; */
+    height: 190px;
+}
+
+.infoEscudo h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* social */
+.social{
+    margin: 50px;
+}
+
+.social p{
+    text-align: center;
+    font-size: 30px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a{
+    margin: 0 30px;
+}
+
+.links a i{
+    font-size: 3rem;
+}
+
+/* footer links */
+.footer-links{
+    background: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-container ul {
+    margin: 0 auto;
+}
+
+.footer-container ul li {
+    line-height: 2.8;
+}
+
+.footer{
+    background: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media(max-width: 1370px){
+    .news-card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 817px){ /* cambio de iconos en el navbar */
+    .iconNavbar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .infoEscudo{
+        width: 100%;
+    }
+    .news-card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-links .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nav-main-left {
+        width: 87%;
+    }
+    .dropdown .dropbtn{
+        font-size: 0px;
+    }
+    .dropdown-content{
+        font-size: 17px;
+    }
+    .nav-menu{
+        font-size: 0px;
+    }
+    .nav-menu i{
+        font-size: 30px;
+    }
+    
+}
+@media(max-width: 694px){
+    .news-card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media(max-width: 500px){ /* se agranda el navbar para que entren los iconos de las redes sociales */
+    .nav-main{
+        height: 100px;
+    }
+    .iconNavbar{
+        flex-direction: column;
+    }
+}
+
